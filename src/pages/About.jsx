@@ -2,9 +2,6 @@
 
 import React from 'react';
 
-// 若使用 Google Fonts，需在 _document.js 或全局CSS里引入Orbitron
-// 示例：@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
 function About() {
   return (
     <div className="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,11 +59,23 @@ function About() {
           </p>
 
           <p className="text-gray-300 leading-relaxed mb-4">
-            Beyond academics, I'm also a devoted investor and a big fan of the crypto space. 
+            ₿eyond academics, I'm also a devoted investor and a ₿ig fan of the crypto space. 
             I'm a quantitative investor drawn to the intersection of machine learning, AI, and finance. 
             I've developed a series of ML-based trading strategies and have successfully applied them 
             to the crypto market.
           </p>
+
+          {/* 新增的兴趣描述 */}
+          <p className="text-gray-300 leading-relaxed mb-4">
+          In my leisure time, I enjoy playing both bridge and Texas Hold'em poker 🃏🃏🃏. 
+          I’m also a semi-professional poker player and have 
+          won some <a href="https://www.wsop.com/tournaments/" target="_blank" rel="noopener noreferrer" 
+          className="text-[#A259FF] hover:underline"> WSOP </a> 
+           tournaments before. The reason I love poker is not just about the thrill of competition, 
+          but also because it combines psychology, strategy, and risk management—elements that 
+          deeply resonate with my analytical nature and passion for continuous learning.
+        </p>
+
         </section>
 
         {/* Research Interests */}

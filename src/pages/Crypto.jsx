@@ -54,43 +54,49 @@ function Crypto() {
               data-driven rigor with community sentiment."
             </blockquote>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Whale Tracking */}
-              <div
-                className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
-                           hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
-              >
-                <h3 className="font-sincopa text-[#A259FF] mb-2">Whale Tracking</h3>
-                <p className="text-gray-400 text-sm">
-                  Real-time monitoring of large holders’ positions and trades,
-                  allowing quick identification of market-moving transactions.
-                </p>
-              </div>
+            <div className="max-w-3xl mx-auto">
+              <h2 className="font-sincopa text-2xl text-center text-[#A259FF] mb-8 neon-glow">
+                My Trading Engine
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Whale Tracking */}
+                <div
+                  className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
+                             hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
+                >
+                  <h3 className="font-sincopa text-[#A259FF] mb-2">Whale Tracking</h3>
+                  <p className="text-gray-400 text-sm">
+                    Real-time monitoring of large holders' positions and trades,
+                    allowing quick identification of market-moving transactions.
+                  </p>
+                </div>
 
-              {/* AI-Driven Insights */}
-              <div
-                className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
-                           hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
-              >
-                <h3 className="font-sincopa text-[#A259FF] mb-2">AI-Driven Insights</h3>
-                <p className="text-gray-400 text-sm">
-                  Machine learning–powered scanning of sentiment, liquidity, and
-                  arbitrage signals across social media, on-chain data, and
-                  multiple exchanges.
-                </p>
-              </div>
+                {/* AI-Driven Insights */}
+                <div
+                  className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
+                             hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
+                >
+                  <h3 className="font-sincopa text-[#A259FF] mb-2">AI-Driven Insights</h3>
+                  <p className="text-gray-400 text-sm">
+                    Machine learning–powered scanning of sentiment, liquidity, and
+                    arbitrage signals across social media, on-chain data, and
+                    multiple exchanges.
+                  </p>
+                </div>
 
-              {/* Hedged Arbitrage */}
-              <div
-                className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
-                           hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
-              >
-                <h3 className="font-sincopa text-[#A259FF] mb-2">Hedged Arbitrage</h3>
-                <p className="text-gray-400 text-sm">
-                  Implementing neutral strategies to exploit pricing
-                  discrepancies while systematically controlling risk to preserve
-                  capital.
-                </p>
+                {/* Hedged Arbitrage */}
+                <div
+                  className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
+                             hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
+                >
+                  <h3 className="font-sincopa text-[#A259FF] mb-2">Hedged Arbitrage</h3>
+                  <p className="text-gray-400 text-sm">
+                    Implementing neutral strategies to exploit pricing
+                    discrepancies while systematically controlling risk to preserve
+                    capital.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

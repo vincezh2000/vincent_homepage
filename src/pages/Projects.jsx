@@ -20,11 +20,13 @@ function Projects() {
       title: "PunkFusion",
       description: "PunkFusion is an experimental project that integrates the iconic CryptoPunk style, Ethereum’s decentralized technology, and cutting-edge generative AI to push the boundaries of NFT creation.",
       image: "/project2.png",
+      showDemo: false,
       links: {
         github: "https://github.com/vincezh2000/PunkFusion/",
         demo: "#"
       }
     },
+    
     // {
     //   title: "AI-Powered Smart Contracts",
     //   description: "Implementation of machine learning algorithms to enhance smart contract security and efficiency.",
