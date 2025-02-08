@@ -8,9 +8,9 @@ function Footer() {
         <div className="flex flex-col items-center space-y-4">
           <div className="flex space-x-6">
             {/* Social Icons with neon effect on hover */}
-            <SocialIcon href="https://twitter.com" icon="twitter" />
-            <SocialIcon href="https://github.com" icon="github" />
-            <SocialIcon href="https://scholar.google.com" icon="scholar" />
+            <SocialIcon href="https://x.com/Vince2000_/" icon="twitter" />
+            <SocialIcon href="https://github.com/vincezh2000" icon="github" />
+            <SocialIcon href="https://scholar.google.com/citations?user=2cn4tKQAAAAJ&hl=en" icon="scholar" />
           </div>
           <p className="text-gray-400 text-sm">
             © 2024 Vincent Zhan. All rights reserved.
