@@ -16,15 +16,15 @@ function Projects() {
         demo: "#"
       }
     },
-    // {
-    //   title: "Distributed Systems Research",
-    //   description: "Research on scalable distributed systems, focusing on consensus algorithms and network optimization.",
-    //   image: "/project2.jpg",
-    //   links: {
-    //     github: "https://github.com/vincentzhan",
-    //     demo: "#"
-    //   }
-    // },
+    {
+      title: "PunkFusion",
+      description: "PunkFusion is an experimental project that integrates the iconic CryptoPunk style, Ethereum’s decentralized technology, and cutting-edge generative AI to push the boundaries of NFT creation.",
+      image: "/project2.png",
+      links: {
+        github: "https://github.com/vincezh2000/PunkFusion/",
+        demo: "#"
+      }
+    },
     // {
     //   title: "AI-Powered Smart Contracts",
     //   description: "Implementation of machine learning algorithms to enhance smart contract security and efficiency.",
