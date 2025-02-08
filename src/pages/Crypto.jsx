@@ -10,7 +10,7 @@ function Crypto() {
     },
     {
       image: "/nft2.avif",
-      name: "Bored Ape #110",
+      name: "Doodle #110",
       artist: "Doodles",
     },
     {
