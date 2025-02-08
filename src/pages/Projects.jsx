@@ -5,11 +5,15 @@ function Projects() {
   const projects = [
     {
       title: "Aligning Diffusion Models with Online Preference Learning",
-      description: "Our proposed EXPO framework significantly improves text-to-image generation quality through iterative online training. By combining limited offline data with self-generated samples via explicit exploration mechanisms, EXPO achieves superior performance compared to models trained solely on offline data. The samples above demonstrate EXPO’s enhanced generation capabilities on unseen prompts across diverse styles and content.",
+      description: "Our proposed EXPO framework significantly improves text-to-image generation quality through iterative online training. By combining limited offline data with self-generated samples via explicit exploration mechanisms, EXPO achieves superior performance compared to models trained solely on offline data. The samples above demonstrate EXPO's enhanced generation capabilities on unseen prompts across diverse styles and content.",
       image: "/project1.png",
+      showDemo: false,
       links: {
-        // github: "https://github.com/vincentzhan",
-        // demo: "#"
+        github: {
+          text: "GitHub (Coming Soon)",
+          isDisabled: true
+        },
+        demo: "#"
       }
     },
     // {
@@ -61,7 +65,9 @@ function Projects() {
               </p>
               <div className="flex space-x-4 pt-4">
                 <ProjectLink href={project.links.github} text="GitHub" />
-                <ProjectLink href={project.links.demo} text="Live Demo" />
+                {project.showDemo !== false && project.links.demo && 
+                  <ProjectLink href={project.links.demo} text="Live Demo" />
+                }
               </div>
             </div>
           </div>
@@ -72,6 +78,14 @@ function Projects() {
 }
 
 function ProjectLink({ href, text }) {
+  if (typeof href === 'object' && href.isDisabled) {
+    return (
+      <span className="px-4 py-2 border border-gray-500 rounded text-gray-500 cursor-not-allowed">
+        {href.text}
+      </span>
+    );
+  }
+
   return (
     <a
       href={href}
