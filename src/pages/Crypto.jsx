@@ -6,23 +6,23 @@ function Crypto() {
     {
       image: "/nft1.avif",
       name: "Doodle #9181",
-      artist: "Larva Labs"
+      artist: "Doodles",
     },
     {
       image: "/nft2.avif",
       name: "Bored Ape #110",
-      artist: "BAYC"
+      artist: "Doodles",
     },
     {
       image: "/nft3.avif",
       name: "Azuki #9140",
-      artist: "Doodles"
+      artist: "Azuki",
     },
     {
       image: "/nft4.avif",
       name: "Azuki #2000",
-      artist: "Azuki"
-    }
+      artist: "Azuki",
+    },
   ];
 
   return (
@@ -32,34 +32,65 @@ function Crypto() {
       </h1>
 
       <div className="space-y-12">
-        {/* Quantitative Trading Focus */}
-        <section className="bg-[#121212] p-8 rounded-lg border border-[#A259FF]/20
-                          hover:shadow-[0_0_20px_#A259FF]/20 transition-all duration-500">
-          {/* <h2 className="font-sincopa text-2xl text-[#A259FF] mb-6 neon-glow">
-            Quantitative Trading
-          </h2> */}
+        {/* Quantitative Trading Section */}
+        <section
+          className="bg-[#121212] p-8 rounded-lg border border-[#A259FF]/20
+                     hover:shadow-[0_0_20px_#A259FF]/20 transition-all duration-500"
+        >
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed font-roboto">
-              My primary focus in the crypto space is quantitative trading,
-              particularly in the dynamic memecoin market. I specialize in developing
-              sophisticated algorithmic trading strategies that capitalize on the unique
-              characteristics of memecoins, including their high volatility and social
-              media-driven nature. By combining statistical analysis, sentiment analysis,
-              and machine learning algorithms, I identify market inefficiencies and
-              capitalize on trading opportunities while maintaining robust risk management.
+              In the fast-moving crypto arena, I focus on quantitative trading
+              in the memecoin market, where I develop algorithmic strategies to
+              harness social media-driven volatility. By combining statistical,
+              sentiment, and machine learning analysis, I pinpoint market
+              inefficiencies and capitalize on short-term opportunities—all
+              while maintaining a disciplined risk management framework.
             </p>
+
+            {/* Quotation */}
+            <blockquote className="border-l-4 border-[#A259FF] pl-4 text-gray-300 italic">
+              "I believe meme coin valuation is the digital reflection of social
+              consensus, demanding quantitative strategies that balance
+              data-driven rigor with community sentiment."
+            </blockquote>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E] hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300">
-                <h3 className="font-sincopa text-[#A259FF] mb-2">Market Analysis</h3>
-                <p className="text-gray-400 text-sm">Real-time analysis of memecoin market sentiment, social media trends, and on-chain metrics</p>
+              {/* Whale Tracking */}
+              <div
+                className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
+                           hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
+              >
+                <h3 className="font-sincopa text-[#A259FF] mb-2">Whale Tracking</h3>
+                <p className="text-gray-400 text-sm">
+                  Real-time monitoring of large holders’ positions and trades,
+                  allowing quick identification of market-moving transactions.
+                </p>
               </div>
-              <div className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E] hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300">
-                <h3 className="font-sincopa text-[#A259FF] mb-2">Algorithm Development</h3>
-                <p className="text-gray-400 text-sm">High-frequency trading algorithms optimized for memecoin volatility and liquidity patterns</p>
+
+              {/* AI-Driven Insights */}
+              <div
+                className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
+                           hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
+              >
+                <h3 className="font-sincopa text-[#A259FF] mb-2">AI-Driven Insights</h3>
+                <p className="text-gray-400 text-sm">
+                  Machine learning–powered scanning of sentiment, liquidity, and
+                  arbitrage signals across social media, on-chain data, and
+                  multiple exchanges.
+                </p>
               </div>
-              <div className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E] hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300">
-                <h3 className="font-sincopa text-[#A259FF] mb-2">Risk Management</h3>
-                <p className="text-gray-400 text-sm">Dynamic risk models with real-time adjustment for meme-driven market movements</p>
+
+              {/* Hedged Arbitrage */}
+              <div
+                className="p-4 bg-[#1A1A1A] rounded-lg hover:bg-[#1E1E1E]
+                           hover:shadow-[0_0_10px_#A259FF]/20 transition-all duration-300"
+              >
+                <h3 className="font-sincopa text-[#A259FF] mb-2">Hedged Arbitrage</h3>
+                <p className="text-gray-400 text-sm">
+                  Implementing neutral strategies to exploit pricing
+                  discrepancies while systematically controlling risk to preserve
+                  capital.
+                </p>
               </div>
             </div>
           </div>
@@ -75,8 +106,8 @@ function Crypto() {
               <div
                 key={index}
                 className="bg-[#121212] rounded-lg overflow-hidden
-                         border border-[#A259FF]/20 hover:shadow-[0_0_20px_#A259FF]/20
-                         transition-all duration-500"
+                           border border-[#A259FF]/20 hover:shadow-[0_0_20px_#A259FF]/20
+                           transition-all duration-500"
               >
                 <img
                   src={nft.image}

@@ -53,11 +53,11 @@ function About() {
 
           <p className="text-gray-300 leading-relaxed mb-4">
             My research focuses on Generative AI, particularly diffusion models. I'm fascinated by 
-            how text-to-image or text-to-video models can better align with human preferences and be 
+            how text-to-image/video models can better align with human preferences and be 
             made more controllable. Ultimately, I believe the real magic unfolds when 
             AI truly merges with human creativity. 
-            Imagine solutions that genuinely collaborate—whether in product design, art, or 
-            market analysis. That's the future I'm building toward: technology that 
+            Imagine solutions that genuinely collaborate—whether in product design, art, film, or 
+            finance analysis. That's the future I'm building toward: technology that 
             goes beyond problem-solving and inspires us to dream bigger.
           </p>
 
@@ -81,7 +81,7 @@ function About() {
             <li>Diffusion Models</li>
             <li>Controllable Generative Models</li>
             <li>Reinforcement Learning from Human Feedback</li>
-            <li>High Frequency Quantitative Trading</li>
+            {/* <li>High Frequency Quantitative Trading</li> */}
           </ul>
         </section>
       </div>
