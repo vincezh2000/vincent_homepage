@@ -63,7 +63,7 @@ function MyCat() {
                 alt="My Cat"
                 className="w-full object-contain mx-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1E1E1E]/20"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1E1E1E]/20"></div> */}
             </div>
           </div>
           <h1 className="font-barrio text-4xl text-center text-pink-400 mb-6 neon-glow">
