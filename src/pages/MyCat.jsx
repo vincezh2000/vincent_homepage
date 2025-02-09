@@ -9,6 +9,8 @@ import 'swiper/css/navigation';
 function MyCat() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [showAlert, setShowAlert] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const hasShownAlert = localStorage.getItem('catPageAlertShown');
@@ -52,6 +54,30 @@ function MyCat() {
         </div>
       )}
       
+      {showModal && (
+        <div 
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={() => setShowModal(false)}
+        >
+          <div className="relative max-w-7xl max-h-[90vh] w-full flex items-center justify-center">
+            <img
+              src={selectedImage}
+              alt="Bella"
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button
+              className="absolute top-4 right-4 text-white hover:text-pink-400 transition-colors"
+              onClick={() => setShowModal(false)}
+            >
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}
@@ -127,7 +153,11 @@ function MyCat() {
                       src={photo.image}
                       alt={photo.description}
                       className="w-full h-full object-cover rounded-lg transition-all duration-500
-                               group-hover:shadow-[0_0_30px_rgba(162,89,255,0.3)]"
+                               group-hover:shadow-[0_0_30px_rgba(162,89,255,0.3)] cursor-pointer"
+                      onClick={() => {
+                        setSelectedImage(photo.image);
+                        setShowModal(true);
+                      }}
                     />
                   </div>
                 </div>

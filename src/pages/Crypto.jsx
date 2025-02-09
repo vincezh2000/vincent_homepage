@@ -27,9 +27,10 @@ function Crypto() {
 
   return (
     <div className="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 className="font-sincopa text-3xl text-center text-[#A259FF] mb-12 neon-glow">
+      <h1 className="font-poiret font-bold text-3xl text-center text-[#A259FF] mb-12 neon-glow">
         Crypto
       </h1>
+
 
       <div className="space-y-12">
         {/* Quantitative Trading Section */}
@@ -55,7 +56,7 @@ function Crypto() {
             </blockquote>
 
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-sincopa text-2xl text-center text-[#A259FF] mb-8 neon-glow">
+              <h2 className="font-tulpen text-4xl text-center text-[#A259FF] mb-8 neon-glow">
                 My Trading Engine
               </h2>
               

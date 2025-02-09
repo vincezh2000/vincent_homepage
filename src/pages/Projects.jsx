@@ -40,7 +40,7 @@ function Projects() {
 
   return (
     <div className="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 className="font-sincopa text-3xl text-center text-[#A259FF] mb-12 neon-glow">
+      <h1 className="font-poiret font-bold text-3xl text-center text-[#A259FF] mb-12 neon-glow">
         Research & Projects
       </h1>
       

@@ -8,6 +8,8 @@ export default {
         'honk': ['Honk', 'system-ui'],
         'barrio': ['Barrio', 'cursive'],
         'bubblegum': ['Bubblegum Sans', 'cursive'],
+        'tulpen': ['Tulpen One', 'cursive'],
+        'poiret': ['Poiret One', 'cursive'],
       },
     },
   },
