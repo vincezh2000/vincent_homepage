@@ -12,35 +12,47 @@ function Projects() {
       links: {
         github: {
           text: "GitHub (Coming Soon)",
-          isDisabled: true
+          isDisabled: true,
         },
-        demo: "#"
-      }
+        demo: "#",
+      },
     },
     {
       title: "PunkFusion",
-      description:
-        "PunkFusion is an experimental project that integrates the iconic CryptoPunk style, Ethereum’s decentralized technology, and cutting-edge generative AI to push the boundaries of NFT creation.",
+      description: (
+        <>
+          PunkFusion is an experimental project that integrates the iconic{" "}
+          <a
+            href="https://cryptopunks.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CryptoPunks
+          </a>{" "}
+          style, Ethereum's decentralized technology, and cutting-edge generative AI to push the boundaries of NFT creation.
+        </>
+      ),
       image: "/project2.png",
-      // showDemo: false,
       links: {
         github: "https://github.com/vincezh2000/PunkFusion/",
-        demo: "https://huggingface.co/spaces/vince2000/PunkFusion"
-      }
+        demo: "https://huggingface.co/spaces/vince2000/PunkFusion",
+      },
     },
     {
-      title: "Supply Chain-Enhanced Stock Return Forecasting with Temporal Graph Convolution",
+      title:
+        "Supply Chain-Enhanced Stock Return Forecasting with Temporal Graph Convolution",
       description:
-        "This project constructs a supply chain relationship matrix for China’s A-share market and leverages an RSR model (combining LSTM and Temporal Graph Convolution) to derive supply chain propagation factors that significantly improve stock return forecasting, as confirmed by robust quintile portfolio backtesting results.",
+        "This project constructs a supply chain relationship matrix for China's A-share market and leverages an RSR model (combining LSTM and Temporal Graph Convolution) to derive supply chain propagation factors that significantly improve stock return forecasting, as confirmed by robust quintile portfolio backtesting results.",
       image: "/project3.png",
       showDemo: false,
-      // 在这里添加一个 paper 字段
       links: {
-        github: "https://github.com/fulifeng/Temporal_Relational_Stock_Ranking",
-        demo: "#",  // 保留原本的 demo
-        paper: "https://www.researchgate.net/profile/Tianyu-Zhan-5/publication/388825504_jiyugongsiguanlianguanxidetushenjingwangluogupiaoshouyiluyuce/links/67a7f810645ef274a47705ba/jiyugongsiguanlianguanxidetushenjingwangluogupiaoshouyiluyuce.pdf?origin=publicationDetail&_sg%5B0%5D=eXmp9cdFY-4cz5Pqmg5KHuHvy93zBCgH5x7Sd3-RMAFC7Fe21UgQmPJkuPMj0PFigvK4lMKnNZF_5czmC_K5ig.fif2Pk0X4ze54XKrfzXsuR9yTIyFOp1BRV660QCIDFewkjFRI028F4AS4quoxdNCyF7WGQhW6gqXF3fZTpGIDg&_sg%5B1%5D=Jk3EUecROOea2c3AOxTKqBiRXe9dxs9UPaw21xiu5K0gEGwNzE0J0DTJ0QwjvTqS19QYICy_7JkpM8EDflKttLJDtBxfN34nw6DUTxKpJ-6O.fif2Pk0X4ze54XKrfzXsuR9yTIyFOp1BRV660QCIDFewkjFRI028F4AS4quoxdNCyF7WGQhW6gqXF3fZTpGIDg&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InNpZ251cCIsInBhZ2UiOiJwdWJsaWNhdGlvbiIsInBvc2l0aW9uIjoicGFnZUhlYWRlciJ9fQ"
-      }
-    }
+        github:
+          "https://github.com/fulifeng/Temporal_Relational_Stock_Ranking",
+        demo: "#", // 保留原本的 demo
+        paper:
+          "https://www.researchgate.net/profile/Tianyu-Zhan-5/publication/388825504_jiyugongsiguanlianguanxidetushenjingwangluogupiaoshouyiluyuce/links/67a7f810645ef274a47705ba/jiyugongsiguanlianguanxidetushenjingwangluogupiaoshouyiluyuce.pdf?origin=publicationDetail&_sg%5B0%5D=eXmp9cdFY-4cz5Pqmg5KHuHvy93zBCgH5x7Sd3-RMAFC7Fe21UgQmPJkuPMj0PFigvK4lMKnNZF_5czmC_K5ig.fif2Pk0X4ze54XKrfzXsuR9yTIyFOp1BRV660QCIDFewkjFRI028F4AS4quoxdNCyF7WGQhW6gqXF3fZTpGIDg&_sg%5B1%5D=Jk3EUecROOea2c3AOxTKqBiRXe9dxs9UPaw21xiu5K0gEGwNzE0J0DTJ0QwjvTqS19QYICy_7JkpM8EDflKttLJDtBxfN34nw6DUTxKpJ-6O.fif2Pk0X4ze54XKrfzXsuR9yTIyFOp1BRV660QCIDFewkjFRI028F4AS4quoxdNCyF7WGQhW6gqXF3fZTpGIDg&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InNpZ251cCIsInBhZ2UiOiJwdWJsaWNhdGlvbiIsInBvc2l0aW9uIjoicGFnZUhlYWRlciJ9fQ",
+      },
+    },
   ];
 
   return (
@@ -48,13 +60,12 @@ function Projects() {
       <h1 className="font-poiret font-bold text-3xl text-center text-[#A259FF] mb-12 neon-glow">
         Research & Projects
       </h1>
-      
+
       <div className="space-y-12">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row gap-8 bg-[#121212] rounded-lg overflow-hidden
-                     border border-[#A259FF]/20 hover:shadow-[0_0_20px_#A259FF]/20 transition-all duration-500 p-6"
+            className="flex flex-col md:flex-row gap-8 bg-[#121212] rounded-lg overflow-hidden border border-[#A259FF]/20 hover:shadow-[0_0_20px_#A259FF]/20 transition-all duration-500 p-6"
           >
             <div className="md:w-1/2">
               <img
@@ -74,12 +85,12 @@ function Projects() {
                 {/* GitHub Link */}
                 <ProjectLink href={project.links.github} text="GitHub" />
 
-                {/* Live Demo Link （只要project.showDemo不是false且有demo就显示）*/}
+                {/* Live Demo Link (只在 showDemo !== false 且 links.demo 存在时显示) */}
                 {project.showDemo !== false && project.links.demo && (
                   <ProjectLink href={project.links.demo} text="Live Demo" />
                 )}
 
-                {/* Paper Link （如果存在paper字段，就显示一个Paper按钮） */}
+                {/* Paper Link (如果存在 paper 字段，则显示按钮) */}
                 {project.links.paper && (
                   <ProjectLink href={project.links.paper} text="Paper" />
                 )}
@@ -93,8 +104,8 @@ function Projects() {
 }
 
 function ProjectLink({ href, text }) {
-  // 如果是一个对象且被标记为isDisabled，则置灰
-  if (typeof href === 'object' && href.isDisabled) {
+  // 如果 href 是对象并标记为 isDisabled，则返回禁用状态的按钮
+  if (typeof href === "object" && href.isDisabled) {
     return (
       <span className="px-4 py-2 border border-gray-500 rounded text-gray-500 cursor-not-allowed">
         {href.text}
@@ -102,15 +113,13 @@ function ProjectLink({ href, text }) {
     );
   }
 
-  // 否则正常渲染链接
+  // 正常渲染超链接按钮
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="px-4 py-2 border border-[#A259FF] rounded text-[#A259FF]
-               hover:bg-[#A259FF]/10 hover:shadow-[0_0_10px_#A259FF]
-               transition-all duration-300"
+      className="px-4 py-2 border border-[#A259FF] rounded text-[#A259FF] hover:bg-[#A259FF]/10 hover:shadow-[0_0_10px_#A259FF] transition-all duration-300"
     >
       {text}
     </a>
