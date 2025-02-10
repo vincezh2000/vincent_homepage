@@ -10,7 +10,7 @@ function Projects() {
       image: "/project1.png",
       showDemo: false,
       links: {
-        github: "https://vincentzhan.com/paper/expo",
+        paper: "https://vincentzhan.com/paper/expo",
         demo: "#",
       },
     },
