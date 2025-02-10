@@ -5,8 +5,10 @@ function Projects() {
   const projects = [
     {
       title: "Aligning Diffusion Models with Online Preference Learning",
-      description:
-        "Our proposed EXPO framework significantly improves text-to-image generation quality through iterative online training. By combining limited offline data with self-generated samples via explicit exploration mechanisms, EXPO achieves superior performance compared to models trained solely on offline data. The samples above demonstrate EXPO's enhanced generation capabilities on unseen prompts across diverse styles and content.",
+      description: `Our proposed EXPO framework significantly improves text-to-image generation quality through iterative online exploration. 
+        By combining limited offline data with self-generated samples via explicit exploration mechanisms, 
+        EXPO achieves superior performance compared to models trained solely on offline data. 
+        The samples above demonstrate EXPO's enhanced generation capabilities on unseen prompts across diverse styles and content using only sd1.5 model.`,
       image: "/project1.png",
       showDemo: false,
       showGitHub: false,
