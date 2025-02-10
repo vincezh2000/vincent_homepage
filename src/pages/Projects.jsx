@@ -9,6 +9,7 @@ function Projects() {
         "Our proposed EXPO framework significantly improves text-to-image generation quality through iterative online training. By combining limited offline data with self-generated samples via explicit exploration mechanisms, EXPO achieves superior performance compared to models trained solely on offline data. The samples above demonstrate EXPO's enhanced generation capabilities on unseen prompts across diverse styles and content.",
       image: "/project1.png",
       showDemo: false,
+      showGitHub: false,
       links: {
         paper: "https://vincentzhan.com/paper/expo",
         demo: "#",
@@ -79,8 +80,10 @@ function Projects() {
                 {project.description}
               </p>
               <div className="flex space-x-4 pt-4">
-                {/* GitHub Link */}
-                <ProjectLink href={project.links.github} text="GitHub" />
+                {/* GitHub Link (只在 showGitHub !== false 且 links.github 存在时显示) */}
+                {project.showGitHub !== false && project.links.github && (
+                  <ProjectLink href={project.links.github} text="GitHub" />
+                )}
 
                 {/* Live Demo Link (只在 showDemo !== false 且 links.demo 存在时显示) */}
                 {project.showDemo !== false && project.links.demo && (
