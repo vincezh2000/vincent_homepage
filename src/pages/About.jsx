@@ -67,13 +67,16 @@ function About() {
 
           {/* 新增的兴趣描述 */}
           <p className="text-gray-300 leading-relaxed mb-4">
-          In my leisure time, I enjoy playing both bridge and Texas Hold'em poker 🃏🃏🃏. 
-          I’m also a semi-professional poker player and have 
-          won some <a href="https://www.wsop.com/tournaments/" target="_blank" rel="noopener noreferrer" 
+          In my leisure time, I enjoy playing both bridge and Texas Hold'em poker🃏🃏. 
+          I'm particularly passionate about poker and have achieved some success in 
+          <a href="https://www.wsop.com/tournaments/" target="_blank" rel="noopener noreferrer" 
           className="text-[#A259FF] hover:underline"> WSOP </a> 
-           tournaments before. The reason I love poker is not just about the thrill of competition, 
-          but also because it combines psychology, strategy, and risk management—elements that 
-          deeply resonate with my analytical nature and passion for continuous learning.
+          tournaments. What fascinates me about poker is how it perfectly blends psychology, 
+          mathematical strategy, and risk management - skills that align well with my 
+          analytical mindset in both research and trading. The game has taught me valuable 
+          lessons about decision-making under uncertainty that I often apply to other aspects 
+          of my work.
+          </p>
         </p>
 
         </section>
