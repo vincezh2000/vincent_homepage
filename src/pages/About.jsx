@@ -38,12 +38,12 @@ function About() {
           <p className="text-gray-300 leading-relaxed mb-4">
             Hi👋 I'm Tianyu Zhan (Vincent), a passionate student developer focused on 
             cutting-edge generative AI. I'm currently pursuing a Master's degree in Computer Science 
-            at <a href="https://cs.nyu.edu/home/index.html" target="_blank" rel="noopener noreferrer" 
-            className="text-[#A259FF] hover:underline">New York University's Courant Institute of Mathematical Sciences</a>.
+            at New York University's <a href="https://cs.nyu.edu/home/index.html" target="_blank" rel="noopener noreferrer" 
+            className="text-[#A259FF] hover:underline">Courant Institute of Mathematical Sciences</a>.
             
             In addition to my CS background, I hold an Economics degree from the 
             <a href="https://en.nsd.pku.edu.cn/" target="_blank" rel="noopener noreferrer" 
-            className="text-[#A259FF] hover:underline"> National School of Development at Peking University</a>. 
+            className="text-[#A259FF] hover:underline"> National School of Development </a> at Peking University. 
             This interdisciplinary background fuels my unique perspective in 
             combining technical innovation with economic theory.
           </p>
