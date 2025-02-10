@@ -7,6 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Crypto from './pages/Crypto';
 import MyCat from './pages/MyCat';
+import PDFViewer from './components/PDFViewer';
 
 // Import fonts
 import '@fontsource/roboto';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/crypto" element={<Crypto />} />
             <Route path="/cat" element={<MyCat />} />
+            <Route path="/pdf" element={<PDFViewer />} />
           </Routes>
         </main>
         <Footer />
