@@ -25,7 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/crypto" element={<Crypto />} />
             <Route path="/cat" element={<MyCat />} />
-            <Route path="/pdf" element={<PDFViewer />} />
+            <Route path="/paper/:id" element={<PDFViewer />} />
           </Routes>
         </main>
         <Footer />

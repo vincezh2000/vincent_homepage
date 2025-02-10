@@ -10,10 +10,7 @@ function Projects() {
       image: "/project1.png",
       showDemo: false,
       links: {
-        github: {
-          text: "GitHub (Coming Soon)",
-          isDisabled: true,
-        },
+        github: "https://vincentzhan.com/paper/expo",
         demo: "#",
       },
     },
@@ -50,7 +47,7 @@ function Projects() {
           "https://github.com/fulifeng/Temporal_Relational_Stock_Ranking",
         demo: "#", // 保留原本的 demo
         paper:
-          "https://www.researchgate.net/profile/Tianyu-Zhan-5/publication/388825504_jiyugongsiguanlianguanxidetushenjingwangluogupiaoshouyiluyuce/links/67a7f810645ef274a47705ba/jiyugongsiguanlianguanxidetushenjingwangluogupiaoshouyiluyuce.pdf?origin=publicationDetail&_sg%5B0%5D=eXmp9cdFY-4cz5Pqmg5KHuHvy93zBCgH5x7Sd3-RMAFC7Fe21UgQmPJkuPMj0PFigvK4lMKnNZF_5czmC_K5ig.fif2Pk0X4ze54XKrfzXsuR9yTIyFOp1BRV660QCIDFewkjFRI028F4AS4quoxdNCyF7WGQhW6gqXF3fZTpGIDg&_sg%5B1%5D=Jk3EUecROOea2c3AOxTKqBiRXe9dxs9UPaw21xiu5K0gEGwNzE0J0DTJ0QwjvTqS19QYICy_7JkpM8EDflKttLJDtBxfN34nw6DUTxKpJ-6O.fif2Pk0X4ze54XKrfzXsuR9yTIyFOp1BRV660QCIDFewkjFRI028F4AS4quoxdNCyF7WGQhW6gqXF3fZTpGIDg&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InNpZ251cCIsInBhZ2UiOiJwdWJsaWNhdGlvbiIsInBvc2l0aW9uIjoicGFnZUhlYWRlciJ9fQ",
+          "https://vincentzhan.com/paper/fe_return",
       },
     },
   ];
