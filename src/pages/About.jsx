@@ -77,7 +77,6 @@ function About() {
           lessons about decision-making under uncertainty that I often apply to other aspects 
           of my work.
           </p>
-        </p>
 
         </section>
 
