@@ -67,7 +67,7 @@ function About() {
 
           {/* 新增的兴趣描述 */}
           <p className="text-gray-300 leading-relaxed mb-4">
-          In my leisure time, I enjoy playing both bridge and Texas Hold'em poker🃏🃏. 
+          In my leisure time, I enjoy playing both bridge and Texas Hold'em poker🃏🃏🃏. 
           I'm particularly passionate about poker and have achieved some success in 
           <a href="https://www.wsop.com/tournaments/" target="_blank" rel="noopener noreferrer" 
           className="text-[#A259FF] hover:underline"> WSOP </a> 
