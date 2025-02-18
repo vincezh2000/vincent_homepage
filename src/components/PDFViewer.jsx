@@ -11,6 +11,8 @@ function PDFViewer() {
         return '/main.pdf';
       case 'fe_return':
         return '/fe_return.pdf';
+      case 'rp-diffusion':
+        return '/RP-diffusion DPO.pdf';
       default:
         return '/main.pdf';
     }
