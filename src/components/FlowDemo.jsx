@@ -147,11 +147,9 @@ flowchart TB
     C2 -- 否/需要修改 --> C3["Writer/新Writer 修改故事大纲"]
     click C3 href "#C3"
     C3 --> C1
-    C2 -- 是 --> D0["编剧扩写子情节<br>Story Expansion"]
+    C2 -- 是 --> D0["编剧扩写子情节并生成章节文本<br>Story Expansion & Chapter Generation"]
     click D0 href "#D0"
-    D0 --> D1["生成每一章节文本<br>(与前后情节保持一致)"]
-    click D1 href "#D1"
-    D1 --> E0["编剧草拟剧本<br>Script Drafting"]
+    D0 --> E0["编剧草拟剧本<br>Script Drafting"]
     click E0 href "#E0"
     E0 --> F0["角色扮演<br>Role-Playing"]
     click F0 href "#F0"
@@ -171,8 +169,7 @@ flowchart TB
           <div onClick={() => handleNodeClick('C1')} style={navItemStyle}>C1: 编辑审阅大纲</div>
           <div onClick={() => handleNodeClick('B3')} style={navItemStyle}>B3: 新Writer 修改角色草稿</div>
           <div onClick={() => handleNodeClick('C3')} style={navItemStyle}>C3: Writer/新Writer 修改故事大纲</div>
-          <div onClick={() => handleNodeClick('D0')} style={navItemStyle}>D0: 编剧扩写子情节</div>
-          <div onClick={() => handleNodeClick('D1')} style={navItemStyle}>D1: 生成章节文本</div>
+          <div onClick={() => handleNodeClick('D0')} style={navItemStyle}>D0: 编剧扩写子情节并生成章节文本</div>
           <div onClick={() => handleNodeClick('E0')} style={navItemStyle}>E0: 编剧草拟剧本</div>
           <div onClick={() => handleNodeClick('F0')} style={navItemStyle}>F0: 角色扮演</div>
         </nav>
@@ -376,20 +373,12 @@ Table 15b: Prompt used to make the writer revise the outline based on feedback s
 
           {/* 对应节点 D0 */}
           <div className="annotation" id="D0" style={annotationStyle}>
-            <h3 style={annotationH3Style}>对应节点 D0: 编剧扩写子情节 (Story Expansion)</h3>
+            <h3 style={annotationH3Style}>对应节点 D0: 编剧扩写子情节并生成章节文本 (Story Expansion & Chapter Generation)</h3>
             <pre style={preStyle}>
 {`Writer System Prompt:
 You are a writer, your task is to expand upon one of the story plot points in an existing story outline, transforming it into a complete story chapter while maintaining coherence and consistency with the previous happened story content. The story needs to be specific, with dramatic conflict that captures the audience's attention and resonates with them.
 
-Table 17a: Prompt used to make the writer expand the subplots in the outline into story chapters.`}
-            </pre>
-          </div>
-
-          {/* 对应节点 D1 */}
-          <div className="annotation" id="D1" style={annotationStyle}>
-            <h3 style={annotationH3Style}>对应节点 D1: 生成每一章节文本 (Chapter Generation)</h3>
-            <pre style={preStyle}>
-{`Writer User Prompt:
+Writer User Prompt:
 The current story plot point you need to expand is:
 <plot_point>
 </plot_point>
@@ -409,7 +398,7 @@ The story chapter you have expanded
 </chapter>
 Please adhere strictly to this format and refrain from including any unnecessary content!
 
-Table 17b: Prompt used to generate detailed chapter content based on the expanded story outline.`}
+Table 17: Prompt used to make the writer expand the subplots in the outline into story chapters and generate detailed chapter content.`}
             </pre>
           </div>
 
