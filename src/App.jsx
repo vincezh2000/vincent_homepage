@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Crypto from './pages/Crypto';
 import MyCat from './pages/MyCat';
 import PDFViewer from './components/PDFViewer';
+import FlowDemo from './components/FlowDemo';
 
 // Import fonts
 import '@fontsource/roboto';
@@ -26,6 +27,7 @@ function App() {
             <Route path="/crypto" element={<Crypto />} />
             <Route path="/cat" element={<MyCat />} />
             <Route path="/paper/:id" element={<PDFViewer />} />
+            <Route path="/flow-demo" element={<FlowDemo />} />
           </Routes>
         </main>
         <Footer />
